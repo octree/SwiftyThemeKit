@@ -16,6 +16,7 @@
 		C285DC0321218EF70097DE7C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C285DC0221218EF70097DE7C /* Assets.xcassets */; };
 		C285DC0621218EF70097DE7C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C285DC0421218EF70097DE7C /* LaunchScreen.storyboard */; };
 		C285DC1121218EF80097DE7C /* DemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C285DC1021218EF80097DE7C /* DemoTests.swift */; };
+		C2CFE03B2121C077002605D3 /* Color+Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2CFE03A2121C076002605D3 /* Color+Theme.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,7 @@
 		C285DC1D2121C0250097DE7C /* Color+suggest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+suggest.swift"; sourceTree = "<group>"; };
 		C285DC1E2121C0250097DE7C /* Color+Scheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Scheme.swift"; sourceTree = "<group>"; };
 		C285DC1F2121C0250097DE7C /* Color+HSL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+HSL.swift"; sourceTree = "<group>"; };
+		C2CFE03A2121C076002605D3 /* Color+Theme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Color+Theme.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,6 +167,7 @@
 				C285DC1A2121C0250097DE7C /* Color+Saturation.swift */,
 				C285DC1E2121C0250097DE7C /* Color+Scheme.swift */,
 				C285DC1D2121C0250097DE7C /* Color+suggest.swift */,
+				C2CFE03A2121C076002605D3 /* Color+Theme.swift */,
 			);
 			path = "UIColor+Extension";
 			sourceTree = "<group>";
@@ -266,7 +269,7 @@
 				TargetAttributes = {
 					C285DBDA21218D1D0097DE7C = {
 						CreatedOnToolsVersion = 10.0;
-						LastSwiftMigration = 1000;
+						LastSwiftMigration = 0940;
 					};
 					C285DBE321218D1D0097DE7C = {
 						CreatedOnToolsVersion = 10.0;
@@ -340,6 +343,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C2CFE03B2121C077002605D3 /* Color+Theme.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -581,6 +585,7 @@
 		C285DBF321218D1D0097DE7C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7A5GV3DH33;
 				INFOPLIST_FILE = ThemeKitTests/Info.plist;
@@ -599,6 +604,7 @@
 		C285DBF421218D1D0097DE7C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7A5GV3DH33;
 				INFOPLIST_FILE = ThemeKitTests/Info.plist;
