@@ -56,6 +56,7 @@ class ViewController: UIViewController {
     func renderButtons() {
         
         for (index,button) in colorButtons.enumerated() {
+            button.tag = index
             button.backgroundColor = UIColor(hex6: ThemePrimaryColors[index])
         }
     }
