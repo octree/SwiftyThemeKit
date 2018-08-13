@@ -4,7 +4,7 @@ public extension UIColor {
     
     public var S50: UIColor {
         
-        return lighten(byAmount: -0.24)
+        return lighten(byAmount: 0.52)
     }
     
     public var S100: UIColor {
