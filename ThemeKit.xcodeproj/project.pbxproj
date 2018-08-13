@@ -43,7 +43,7 @@
 		C2AC145A2121C31600E6BEB2 /* UIPopoverPresentationController+Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2AC14492121C31600E6BEB2 /* UIPopoverPresentationController+Theme.swift */; };
 		C2AC145B2121C31600E6BEB2 /* UITabbar+Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2AC144A2121C31600E6BEB2 /* UITabbar+Theme.swift */; };
 		C2AC145D2121C3A600E6BEB2 /* ThemePrimaryColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2AC145C2121C3A600E6BEB2 /* ThemePrimaryColors.swift */; };
-		C2D430F32121C4A60038A2CE /* Color+Transform.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2D430F12121C4A60038A2CE /* Color+Transform.swift */; };
+		C2CFE03E2121C9E4002605D3 /* Color+Transform.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2CFE03D2121C9E3002605D3 /* Color+Transform.swift */; };
 		C2D430F42121C4A60038A2CE /* Color+Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2D430F22121C4A60038A2CE /* Color+Theme.swift */; };
 		C2D431032121C6AF0038A2CE /* ThemeKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C285DBDB21218D1D0097DE7C /* ThemeKit.framework */; };
 		C2D431042121C6AF0038A2CE /* ThemeKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C285DBDB21218D1D0097DE7C /* ThemeKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -131,7 +131,7 @@
 		C2AC14492121C31600E6BEB2 /* UIPopoverPresentationController+Theme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIPopoverPresentationController+Theme.swift"; sourceTree = "<group>"; };
 		C2AC144A2121C31600E6BEB2 /* UITabbar+Theme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITabbar+Theme.swift"; sourceTree = "<group>"; };
 		C2AC145C2121C3A600E6BEB2 /* ThemePrimaryColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThemePrimaryColors.swift; sourceTree = "<group>"; };
-		C2D430F12121C4A60038A2CE /* Color+Transform.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Color+Transform.swift"; path = "../../../uLens/uLens/ThemeKit/Color+Transform.swift"; sourceTree = "<group>"; };
+		C2CFE03D2121C9E3002605D3 /* Color+Transform.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Color+Transform.swift"; sourceTree = "<group>"; };
 		C2D430F22121C4A60038A2CE /* Color+Theme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Color+Theme.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -247,7 +247,7 @@
 				C285DC1E2121C0250097DE7C /* Color+Scheme.swift */,
 				C285DC1D2121C0250097DE7C /* Color+suggest.swift */,
 				C2D430F22121C4A60038A2CE /* Color+Theme.swift */,
-				C2D430F12121C4A60038A2CE /* Color+Transform.swift */,
+				C2CFE03D2121C9E3002605D3 /* Color+Transform.swift */,
 			);
 			path = "UIColor+Extension";
 			sourceTree = "<group>";
@@ -455,6 +455,7 @@
 				C2AC145B2121C31600E6BEB2 /* UITabbar+Theme.swift in Sources */,
 				C2AC14522121C31600E6BEB2 /* UISlider+Theme.swift in Sources */,
 				C2AC145A2121C31600E6BEB2 /* UIPopoverPresentationController+Theme.swift in Sources */,
+				C2CFE03E2121C9E4002605D3 /* Color+Transform.swift in Sources */,
 				C26E7D8B2121C185001EF7B9 /* ThemeKit.swift in Sources */,
 				C26E7D7C2121C123001EF7B9 /* Color+Hex.swift in Sources */,
 				C26E7D8A2121C185001EF7B9 /* ThemePicker.swift in Sources */,
@@ -464,7 +465,6 @@
 				C26E7D802121C123001EF7B9 /* Color+Scheme.swift in Sources */,
 				C2AC14532121C31600E6BEB2 /* CALayer+Theme.swift in Sources */,
 				C2AC144C2121C31600E6BEB2 /* UINavigationBar+Theme.swift in Sources */,
-				C2D430F32121C4A60038A2CE /* Color+Transform.swift in Sources */,
 				C2AC14552121C31600E6BEB2 /* UITextField+Theme.swift in Sources */,
 				C2AC14542121C31600E6BEB2 /* UILabel+Theme.swift in Sources */,
 				C26E7D7D2121C123001EF7B9 /* Color+HSL.swift in Sources */,

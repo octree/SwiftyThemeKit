@@ -12,7 +12,7 @@
         <!--View Controller-->
         <scene sceneID="gVd-9a-gOO">
             <objects>
-                <viewController id="nyZ-hb-O2N" customClass="ViewController" customModule="ThemeKit" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="nyZ-hb-O2N" customClass="ViewController" customModule="Demo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="CZF-kT-lWT">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -264,7 +264,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.93725490196078431" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="rM3-VD-pVF"/>
                     </view>
                     <connections>
