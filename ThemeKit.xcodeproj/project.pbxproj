@@ -27,6 +27,23 @@
 		C285DC0321218EF70097DE7C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C285DC0221218EF70097DE7C /* Assets.xcassets */; };
 		C285DC0621218EF70097DE7C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C285DC0421218EF70097DE7C /* LaunchScreen.storyboard */; };
 		C285DC1121218EF80097DE7C /* DemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C285DC1021218EF80097DE7C /* DemoTests.swift */; };
+		C2AC144B2121C31600E6BEB2 /* UITextView+Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2AC143A2121C31500E6BEB2 /* UITextView+Theme.swift */; };
+		C2AC144C2121C31600E6BEB2 /* UINavigationBar+Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2AC143B2121C31500E6BEB2 /* UINavigationBar+Theme.swift */; };
+		C2AC144D2121C31600E6BEB2 /* UIView+Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2AC143C2121C31600E6BEB2 /* UIView+Theme.swift */; };
+		C2AC144E2121C31600E6BEB2 /* UITableView+Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2AC143D2121C31600E6BEB2 /* UITableView+Theme.swift */; };
+		C2AC144F2121C31600E6BEB2 /* UIPageControl+Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2AC143E2121C31600E6BEB2 /* UIPageControl+Theme.swift */; };
+		C2AC14502121C31600E6BEB2 /* UISearchBar+Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2AC143F2121C31600E6BEB2 /* UISearchBar+Theme.swift */; };
+		C2AC14512121C31600E6BEB2 /* UIToolbar+Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2AC14402121C31600E6BEB2 /* UIToolbar+Theme.swift */; };
+		C2AC14522121C31600E6BEB2 /* UISlider+Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2AC14412121C31600E6BEB2 /* UISlider+Theme.swift */; };
+		C2AC14532121C31600E6BEB2 /* CALayer+Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2AC14422121C31600E6BEB2 /* CALayer+Theme.swift */; };
+		C2AC14542121C31600E6BEB2 /* UILabel+Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2AC14432121C31600E6BEB2 /* UILabel+Theme.swift */; };
+		C2AC14552121C31600E6BEB2 /* UITextField+Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2AC14442121C31600E6BEB2 /* UITextField+Theme.swift */; };
+		C2AC14562121C31600E6BEB2 /* UIButton+Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2AC14452121C31600E6BEB2 /* UIButton+Theme.swift */; };
+		C2AC14572121C31600E6BEB2 /* UIProgressView+Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2AC14462121C31600E6BEB2 /* UIProgressView+Theme.swift */; };
+		C2AC14582121C31600E6BEB2 /* UIBarButtonItem+Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2AC14472121C31600E6BEB2 /* UIBarButtonItem+Theme.swift */; };
+		C2AC14592121C31600E6BEB2 /* UISwitch+Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2AC14482121C31600E6BEB2 /* UISwitch+Theme.swift */; };
+		C2AC145A2121C31600E6BEB2 /* UIPopoverPresentationController+Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2AC14492121C31600E6BEB2 /* UIPopoverPresentationController+Theme.swift */; };
+		C2AC145B2121C31600E6BEB2 /* UITabbar+Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2AC144A2121C31600E6BEB2 /* UITabbar+Theme.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +91,23 @@
 		C285DC1D2121C0250097DE7C /* Color+suggest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+suggest.swift"; sourceTree = "<group>"; };
 		C285DC1E2121C0250097DE7C /* Color+Scheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Scheme.swift"; sourceTree = "<group>"; };
 		C285DC1F2121C0250097DE7C /* Color+HSL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+HSL.swift"; sourceTree = "<group>"; };
+		C2AC143A2121C31500E6BEB2 /* UITextView+Theme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextView+Theme.swift"; sourceTree = "<group>"; };
+		C2AC143B2121C31500E6BEB2 /* UINavigationBar+Theme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UINavigationBar+Theme.swift"; sourceTree = "<group>"; };
+		C2AC143C2121C31600E6BEB2 /* UIView+Theme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Theme.swift"; sourceTree = "<group>"; };
+		C2AC143D2121C31600E6BEB2 /* UITableView+Theme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+Theme.swift"; sourceTree = "<group>"; };
+		C2AC143E2121C31600E6BEB2 /* UIPageControl+Theme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIPageControl+Theme.swift"; sourceTree = "<group>"; };
+		C2AC143F2121C31600E6BEB2 /* UISearchBar+Theme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UISearchBar+Theme.swift"; sourceTree = "<group>"; };
+		C2AC14402121C31600E6BEB2 /* UIToolbar+Theme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIToolbar+Theme.swift"; sourceTree = "<group>"; };
+		C2AC14412121C31600E6BEB2 /* UISlider+Theme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UISlider+Theme.swift"; sourceTree = "<group>"; };
+		C2AC14422121C31600E6BEB2 /* CALayer+Theme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CALayer+Theme.swift"; sourceTree = "<group>"; };
+		C2AC14432121C31600E6BEB2 /* UILabel+Theme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UILabel+Theme.swift"; sourceTree = "<group>"; };
+		C2AC14442121C31600E6BEB2 /* UITextField+Theme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextField+Theme.swift"; sourceTree = "<group>"; };
+		C2AC14452121C31600E6BEB2 /* UIButton+Theme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+Theme.swift"; sourceTree = "<group>"; };
+		C2AC14462121C31600E6BEB2 /* UIProgressView+Theme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIProgressView+Theme.swift"; sourceTree = "<group>"; };
+		C2AC14472121C31600E6BEB2 /* UIBarButtonItem+Theme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+Theme.swift"; sourceTree = "<group>"; };
+		C2AC14482121C31600E6BEB2 /* UISwitch+Theme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UISwitch+Theme.swift"; sourceTree = "<group>"; };
+		C2AC14492121C31600E6BEB2 /* UIPopoverPresentationController+Theme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIPopoverPresentationController+Theme.swift"; sourceTree = "<group>"; };
+		C2AC144A2121C31600E6BEB2 /* UITabbar+Theme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITabbar+Theme.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -194,6 +228,23 @@
 		C2CFE03C2121C09C002605D3 /* UIKit+Theme */ = {
 			isa = PBXGroup;
 			children = (
+				C2AC14422121C31600E6BEB2 /* CALayer+Theme.swift */,
+				C2AC14472121C31600E6BEB2 /* UIBarButtonItem+Theme.swift */,
+				C2AC14452121C31600E6BEB2 /* UIButton+Theme.swift */,
+				C2AC14432121C31600E6BEB2 /* UILabel+Theme.swift */,
+				C2AC143B2121C31500E6BEB2 /* UINavigationBar+Theme.swift */,
+				C2AC143E2121C31600E6BEB2 /* UIPageControl+Theme.swift */,
+				C2AC14492121C31600E6BEB2 /* UIPopoverPresentationController+Theme.swift */,
+				C2AC14462121C31600E6BEB2 /* UIProgressView+Theme.swift */,
+				C2AC143F2121C31600E6BEB2 /* UISearchBar+Theme.swift */,
+				C2AC14412121C31600E6BEB2 /* UISlider+Theme.swift */,
+				C2AC14482121C31600E6BEB2 /* UISwitch+Theme.swift */,
+				C2AC144A2121C31600E6BEB2 /* UITabbar+Theme.swift */,
+				C2AC143D2121C31600E6BEB2 /* UITableView+Theme.swift */,
+				C2AC14442121C31600E6BEB2 /* UITextField+Theme.swift */,
+				C2AC143A2121C31500E6BEB2 /* UITextView+Theme.swift */,
+				C2AC14402121C31600E6BEB2 /* UIToolbar+Theme.swift */,
+				C2AC143C2121C31600E6BEB2 /* UIView+Theme.swift */,
 			);
 			path = "UIKit+Theme";
 			sourceTree = "<group>";
@@ -370,15 +421,32 @@
 			buildActionMask = 2147483647;
 			files = (
 				C26E7D812121C123001EF7B9 /* Color+suggest.swift in Sources */,
+				C2AC14582121C31600E6BEB2 /* UIBarButtonItem+Theme.swift in Sources */,
+				C2AC14572121C31600E6BEB2 /* UIProgressView+Theme.swift in Sources */,
+				C2AC145B2121C31600E6BEB2 /* UITabbar+Theme.swift in Sources */,
 				C26E7D842121C156001EF7B9 /* Color+Theme.swift in Sources */,
+				C2AC14522121C31600E6BEB2 /* UISlider+Theme.swift in Sources */,
+				C2AC145A2121C31600E6BEB2 /* UIPopoverPresentationController+Theme.swift in Sources */,
 				C26E7D8B2121C185001EF7B9 /* ThemeKit.swift in Sources */,
 				C26E7D7C2121C123001EF7B9 /* Color+Hex.swift in Sources */,
 				C26E7D8A2121C185001EF7B9 /* ThemePicker.swift in Sources */,
 				C26E7D7F2121C123001EF7B9 /* Color+Saturation.swift in Sources */,
+				C2AC144D2121C31600E6BEB2 /* UIView+Theme.swift in Sources */,
 				C26E7D802121C123001EF7B9 /* Color+Scheme.swift in Sources */,
+				C2AC14532121C31600E6BEB2 /* CALayer+Theme.swift in Sources */,
+				C2AC144C2121C31600E6BEB2 /* UINavigationBar+Theme.swift in Sources */,
+				C2AC14552121C31600E6BEB2 /* UITextField+Theme.swift in Sources */,
+				C2AC14542121C31600E6BEB2 /* UILabel+Theme.swift in Sources */,
 				C26E7D7D2121C123001EF7B9 /* Color+HSL.swift in Sources */,
+				C2AC14502121C31600E6BEB2 /* UISearchBar+Theme.swift in Sources */,
 				C26E7D862121C164001EF7B9 /* Color+Transform.swift in Sources */,
+				C2AC144B2121C31600E6BEB2 /* UITextView+Theme.swift in Sources */,
+				C2AC14512121C31600E6BEB2 /* UIToolbar+Theme.swift in Sources */,
+				C2AC144E2121C31600E6BEB2 /* UITableView+Theme.swift in Sources */,
+				C2AC14592121C31600E6BEB2 /* UISwitch+Theme.swift in Sources */,
 				C26E7D7E2121C123001EF7B9 /* Color+HSV.swift in Sources */,
+				C2AC144F2121C31600E6BEB2 /* UIPageControl+Theme.swift in Sources */,
+				C2AC14562121C31600E6BEB2 /* UIButton+Theme.swift in Sources */,
 				C26E7D8C2121C185001EF7B9 /* ThemeManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
