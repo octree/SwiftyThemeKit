@@ -52,6 +52,12 @@
 		C285DC0C21218EF80097DE7C /* DemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C285DC1021218EF80097DE7C /* DemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoTests.swift; sourceTree = "<group>"; };
 		C285DC1221218EF80097DE7C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C285DC1A2121C0250097DE7C /* Color+Saturation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Saturation.swift"; sourceTree = "<group>"; };
+		C285DC1B2121C0250097DE7C /* Color+HSV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+HSV.swift"; sourceTree = "<group>"; };
+		C285DC1C2121C0250097DE7C /* Color+Hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Hex.swift"; sourceTree = "<group>"; };
+		C285DC1D2121C0250097DE7C /* Color+suggest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+suggest.swift"; sourceTree = "<group>"; };
+		C285DC1E2121C0250097DE7C /* Color+Scheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Scheme.swift"; sourceTree = "<group>"; };
+		C285DC1F2121C0250097DE7C /* Color+HSL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+HSL.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +118,7 @@
 		C285DBDD21218D1D0097DE7C /* ThemeKit */ = {
 			isa = PBXGroup;
 			children = (
+				C285DC192121BFF80097DE7C /* UIColor+Extension */,
 				C285DBDE21218D1D0097DE7C /* ThemeKit.h */,
 				C285DBDF21218D1D0097DE7C /* Info.plist */,
 			);
@@ -147,6 +154,19 @@
 				C285DC1221218EF80097DE7C /* Info.plist */,
 			);
 			path = DemoTests;
+			sourceTree = "<group>";
+		};
+		C285DC192121BFF80097DE7C /* UIColor+Extension */ = {
+			isa = PBXGroup;
+			children = (
+				C285DC1C2121C0250097DE7C /* Color+Hex.swift */,
+				C285DC1F2121C0250097DE7C /* Color+HSL.swift */,
+				C285DC1B2121C0250097DE7C /* Color+HSV.swift */,
+				C285DC1A2121C0250097DE7C /* Color+Saturation.swift */,
+				C285DC1E2121C0250097DE7C /* Color+Scheme.swift */,
+				C285DC1D2121C0250097DE7C /* Color+suggest.swift */,
+			);
+			path = "UIColor+Extension";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -246,6 +266,7 @@
 				TargetAttributes = {
 					C285DBDA21218D1D0097DE7C = {
 						CreatedOnToolsVersion = 10.0;
+						LastSwiftMigration = 1000;
 					};
 					C285DBE321218D1D0097DE7C = {
 						CreatedOnToolsVersion = 10.0;
@@ -507,6 +528,7 @@
 		C285DBF021218D1D0097DE7C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -524,6 +546,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = me.octree.ThemeKit;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -532,6 +555,7 @@
 		C285DBF121218D1D0097DE7C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
