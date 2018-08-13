@@ -23,4 +23,18 @@ public extension ThemeKit where Base: UINavigationBar {
             return getPicker()?.keyPath
         }
     }
+    
+    public var titleColor: WritableKeyPath<Theme, UIColor>? {
+        
+        set {
+            let base = self.base
+            setPicker(keyPath: newValue, render: {
+                color in
+                base.titleTextAttributes = [.foregroundColor: color]
+            })
+        }
+        get {
+            return getPicker()?.keyPath
+        }
+    }
 }

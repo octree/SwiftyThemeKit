@@ -10,9 +10,9 @@ import UIKit
 
 private var kThemeKitAssociateKey = "kThemeKitAssociateKey"
 
-public struct ThemeKit<Base> {
+public class ThemeKit<Base: AnyObject> {
     
-    public let base: Base
+    public unowned let  base: Base
     private var pickers = [String: Any]()
     private var statePickers = [String: [UInt: Any]]()
     init(_ base: Base) {
@@ -29,7 +29,7 @@ public extension ThemeKit {
     ///   - keyPath: Theme Keypath
     ///   - render: 渲染函数
     ///   - key: 默认为 #function，一般是属性的名称
-    public mutating func setPicker<T>(keyPath: WritableKeyPath<Theme, T>?, render: @escaping (T) -> Void, key: String = #function) {
+    public func setPicker<T>(keyPath: WritableKeyPath<Theme, T>?, render: @escaping (T) -> Void, key: String = #function) {
         
         if let kp = keyPath {
             pickers[key] = ThemePicker(keyPath: kp, render: render)
@@ -47,7 +47,7 @@ public extension ThemeKit {
         return pickers[key] as? ThemePicker<T>
     }
     
-    public mutating func setStatePicker<T>(keyPath: WritableKeyPath<Theme, T>?, forState state: UIControl.State, render: @escaping (T) -> Void, key: String = #function) {
+    public func setStatePicker<T>(keyPath: WritableKeyPath<Theme, T>?, forState state: UIControl.State, render: @escaping (T) -> Void, key: String = #function) {
         var pickers = statePickers[key] ?? [UInt: Any]()
         if let kp = keyPath {
             pickers[state.rawValue] = ThemePicker(keyPath: kp, render: render)
@@ -58,15 +58,16 @@ public extension ThemeKit {
     }
 }
 
-public protocol ThemeKitCompatible {
+public protocol ThemeKitCompatible: class {
     
-    associatedtype CompatibleType
+    associatedtype CompatibleType: AnyObject
     static var tk: ThemeKit<CompatibleType>.Type { get set }
     var tk: ThemeKit<CompatibleType> { get set }
 }
 
 
 public extension ThemeKitCompatible {
+    
     public static var tk: ThemeKit<Self>.Type {
         get {
             return ThemeKit<Self>.self
@@ -74,7 +75,7 @@ public extension ThemeKitCompatible {
         set {
         }
     }
-    
+
     public var tk: ThemeKit<Self> {
         get {
             

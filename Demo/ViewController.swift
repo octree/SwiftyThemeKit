@@ -51,6 +51,11 @@ class ViewController: UIViewController {
         
         positiveButton.tk.setTitleColor(\Theme.base.destructive, forState: .normal)
         positiveButton.tk.setTitleColor(\Theme.base.darkPositive, forState: .highlighted)
+        
+        navigationController?.navigationBar.tk.barTintColor = \Theme.background.bar
+        navigationController?.navigationBar.isTranslucent = false
+        navigationController?.navigationBar.tk.tintColor = \Theme.base.positive
+        navigationController?.navigationBar.tk.titleColor = \Theme.text.primary
     }
     
     func renderButtons() {
