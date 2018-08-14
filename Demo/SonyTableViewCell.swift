@@ -23,6 +23,9 @@ class SonyTableViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         
+        sceneView.layer.cornerRadius = 12
+        sceneView.layer.masksToBounds = true
+        
         contentView.tk.backgroundColor = \Theme.background.secondary
         sceneView.tk.backgroundColor = \Theme.background.scene
         
@@ -31,5 +34,10 @@ class SonyTableViewCell: UITableViewCell {
         evLabel.tk.textColor = \Theme.text.tertiary
         isoLabel.tk.textColor = \Theme.text.tertiary
         plateLabel.tk.textColor = \Theme.text.primary
+        
+        for icon in icons {
+            
+            icon.tk.tintColor = \Theme.base.positive
+        }
     }
 }

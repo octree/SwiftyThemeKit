@@ -16,7 +16,7 @@ class SonyViewController: UIViewController  {
         super.viewDidLoad()
         
         
-        let headerview = UIView(frame: CGRect(x: 0, y: 0, width: 10, height: 30))
+        let headerview = UIView(frame: CGRect(x: 0, y: 0, width: 10, height: 20))
         headerview.tk.backgroundColor = \Theme.background.secondary
         tableView.tableHeaderView = headerview
         
@@ -32,7 +32,7 @@ class SonyViewController: UIViewController  {
 extension SonyViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 154;
+        return 158;
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
