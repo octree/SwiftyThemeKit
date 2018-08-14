@@ -10,7 +10,7 @@ import UIKit
 
 public extension ThemeKit where Base: UIPageControl {
     
-    public var pageIndicatorTintColor: WritableKeyPath<Theme, UIColor>? {
+    public var pageIndicatorTintColor: KeyPath<Theme, UIColor>? {
         
         set {
             let base = self.base
@@ -24,7 +24,7 @@ public extension ThemeKit where Base: UIPageControl {
         }
     }
     
-    public var currentPageIndicatorTintColor: WritableKeyPath<Theme, UIColor>? {
+    public var currentPageIndicatorTintColor: KeyPath<Theme, UIColor>? {
         
         set {
             let base = self.base

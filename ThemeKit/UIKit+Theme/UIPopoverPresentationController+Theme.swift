@@ -10,7 +10,7 @@ import UIKit
 
 public extension ThemeKit where Base: UIPopoverPresentationController {
     
-    public var backgroundColor: WritableKeyPath<Theme, UIColor>? {
+    public var backgroundColor: KeyPath<Theme, UIColor>? {
         
         set {
             let base = self.base

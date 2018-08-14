@@ -15,7 +15,7 @@ extension UIView: ThemeKitCompatible {
 
 public extension ThemeKit where Base: UIView {
     
-    public var backgroundColor: WritableKeyPath<Theme, UIColor>? {
+    public var backgroundColor: KeyPath<Theme, UIColor>? {
         
         set {
             
@@ -30,7 +30,7 @@ public extension ThemeKit where Base: UIView {
         }
     }
     
-    public var tintColor: WritableKeyPath<Theme, UIColor>? {
+    public var tintColor: KeyPath<Theme, UIColor>? {
         
         set {
             let base = self.base

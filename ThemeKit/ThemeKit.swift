@@ -29,7 +29,7 @@ public extension ThemeKit {
     ///   - keyPath: Theme Keypath
     ///   - render: 渲染函数
     ///   - key: 默认为 #function，一般是属性的名称
-    public func setPicker<T>(keyPath: WritableKeyPath<Theme, T>?, render: @escaping (T) -> Void, key: String = #function) {
+    public func setPicker<T>(keyPath: KeyPath<Theme, T>?, render: @escaping (T) -> Void, key: String = #function) {
         
         if let kp = keyPath {
             pickers[key] = ThemePicker(keyPath: kp, render: render)
@@ -47,7 +47,7 @@ public extension ThemeKit {
         return pickers[key] as? ThemePicker<T>
     }
     
-    public func setStatePicker<T>(keyPath: WritableKeyPath<Theme, T>?, forState state: UIControl.State, render: @escaping (T) -> Void, key: String = #function) {
+    public func setStatePicker<T>(keyPath: KeyPath<Theme, T>?, forState state: UIControl.State, render: @escaping (T) -> Void, key: String = #function) {
         var pickers = statePickers[key] ?? [UInt: Any]()
         if let kp = keyPath {
             pickers[state.rawValue] = ThemePicker(keyPath: kp, render: render)

@@ -10,7 +10,7 @@ import UIKit
 
 public extension ThemeKit where Base: CALayer {
     
-    public var backgroundColor: WritableKeyPath<Theme, UIColor>? {
+    public var backgroundColor: KeyPath<Theme, UIColor>? {
         
         set {
             let base = self.base
@@ -24,7 +24,7 @@ public extension ThemeKit where Base: CALayer {
         }
     }
     
-    public var borderColor: WritableKeyPath<Theme, UIColor>? {
+    public var borderColor: KeyPath<Theme, UIColor>? {
         
         set {
             let base = self.base
@@ -41,7 +41,7 @@ public extension ThemeKit where Base: CALayer {
 
 public extension ThemeKit where Base: CAShapeLayer {
     
-    public var strokeColor: WritableKeyPath<Theme, UIColor>? {
+    public var strokeColor: KeyPath<Theme, UIColor>? {
         
         set {
             let base = self.base
@@ -55,7 +55,7 @@ public extension ThemeKit where Base: CAShapeLayer {
         }
     }
     
-    public var fillColor: WritableKeyPath<Theme, UIColor>? {
+    public var fillColor: KeyPath<Theme, UIColor>? {
         
         set {
             let base = self.base

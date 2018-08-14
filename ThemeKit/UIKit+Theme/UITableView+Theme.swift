@@ -10,7 +10,7 @@ import UIKit
 
 public extension ThemeKit where Base: UITableView {
     
-    public var separatorColor: WritableKeyPath<Theme, UIColor>? {
+    public var separatorColor: KeyPath<Theme, UIColor>? {
         
         set {
             let base = self.base
@@ -24,7 +24,7 @@ public extension ThemeKit where Base: UITableView {
         }
     }
     
-    public var sectionIndexColor: WritableKeyPath<Theme, UIColor>? {
+    public var sectionIndexColor: KeyPath<Theme, UIColor>? {
         
         set {
             let base = self.base
@@ -38,7 +38,7 @@ public extension ThemeKit where Base: UITableView {
         }
     }
     
-    public var sectionIndexBackgroundColor: WritableKeyPath<Theme, UIColor>? {
+    public var sectionIndexBackgroundColor: KeyPath<Theme, UIColor>? {
         
         set {
             let base = self.base

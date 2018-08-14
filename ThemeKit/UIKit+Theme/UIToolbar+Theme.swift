@@ -10,7 +10,7 @@ import UIKit
 
 public extension ThemeKit where Base: UIToolbar {
     
-    public var barTintColor: WritableKeyPath<Theme, UIColor>? {
+    public var barTintColor: KeyPath<Theme, UIColor>? {
         
         set {
             let base = self.base

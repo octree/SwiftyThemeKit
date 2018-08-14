@@ -10,7 +10,7 @@ import UIKit
 
 public extension ThemeKit where Base: UILabel {
     
-    public var textColor: WritableKeyPath<Theme, UIColor>? {
+    public var textColor: KeyPath<Theme, UIColor>? {
         
         set {
             let base = self.base
@@ -24,7 +24,7 @@ public extension ThemeKit where Base: UILabel {
         }
     }
     
-    public var highlightedTextColor: WritableKeyPath<Theme, UIColor>? {
+    public var highlightedTextColor: KeyPath<Theme, UIColor>? {
         
         set {
             let base = self.base
@@ -38,7 +38,7 @@ public extension ThemeKit where Base: UILabel {
         }
     }
     
-    public var shadowColor: WritableKeyPath<Theme, UIColor>? {
+    public var shadowColor: KeyPath<Theme, UIColor>? {
         
         set {
             let base = self.base

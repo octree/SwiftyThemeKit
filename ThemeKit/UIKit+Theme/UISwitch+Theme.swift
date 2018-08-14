@@ -11,7 +11,7 @@ import UIKit
 
 public extension ThemeKit where Base: UISwitch {
     
-    public var onTintColor: WritableKeyPath<Theme, UIColor>? {
+    public var onTintColor: KeyPath<Theme, UIColor>? {
         
         set {
             let base = self.base
@@ -25,7 +25,7 @@ public extension ThemeKit where Base: UISwitch {
         }
     }
     
-    public var thumbTintColor: WritableKeyPath<Theme, UIColor>? {
+    public var thumbTintColor: KeyPath<Theme, UIColor>? {
         
         set {
             let base = self.base

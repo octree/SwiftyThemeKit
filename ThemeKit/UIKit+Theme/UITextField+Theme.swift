@@ -10,7 +10,7 @@ import UIKit
 
 public extension ThemeKit where Base: UITextField {
     
-    public var textColor: WritableKeyPath<Theme, UIColor>? {
+    public var textColor: KeyPath<Theme, UIColor>? {
         
         set {
             let base = self.base

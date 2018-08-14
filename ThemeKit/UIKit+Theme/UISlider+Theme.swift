@@ -10,7 +10,7 @@ import UIKit
 
 public extension ThemeKit where Base: UISlider {
     
-    public var thumbTintColor: WritableKeyPath<Theme, UIColor>? {
+    public var thumbTintColor: KeyPath<Theme, UIColor>? {
         
         set {
             let base = self.base
@@ -24,7 +24,7 @@ public extension ThemeKit where Base: UISlider {
         }
     }
     
-    public var minimumTrackTintColor: WritableKeyPath<Theme, UIColor>? {
+    public var minimumTrackTintColor: KeyPath<Theme, UIColor>? {
         
         set {
             let base = self.base
@@ -38,7 +38,7 @@ public extension ThemeKit where Base: UISlider {
         }
     }
     
-    public var maximumTrackTintColor: WritableKeyPath<Theme, UIColor>? {
+    public var maximumTrackTintColor: KeyPath<Theme, UIColor>? {
         
         set {
             let base = self.base

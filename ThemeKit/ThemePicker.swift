@@ -10,9 +10,9 @@ import Foundation
 
 public final class ThemePicker<Value> {
     
-    public let keyPath: WritableKeyPath<Theme, Value>
+    public let keyPath: KeyPath<Theme, Value>
     private let render: (Value) -> Void
-    public init(keyPath:  WritableKeyPath<Theme, Value>, render: @escaping (Value) -> Void) {
+    public init(keyPath:  KeyPath<Theme, Value>, render: @escaping (Value) -> Void) {
         self.keyPath = keyPath
         self.render = render
         themeUpdated()
