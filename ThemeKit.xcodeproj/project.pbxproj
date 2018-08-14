@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C211ADA52123197D0048CD71 /* UIColor+CYMK.swift in Sources */ = {isa = PBXBuildFile; fileRef = C211ADA42123197D0048CD71 /* UIColor+CYMK.swift */; };
 		C26E7D7C2121C123001EF7B9 /* Color+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = C285DC1C2121C0250097DE7C /* Color+Hex.swift */; };
 		C26E7D7D2121C123001EF7B9 /* Color+HSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = C285DC1F2121C0250097DE7C /* Color+HSL.swift */; };
 		C26E7D7E2121C123001EF7B9 /* Color+HSV.swift in Sources */ = {isa = PBXBuildFile; fileRef = C285DC1B2121C0250097DE7C /* Color+HSV.swift */; };
@@ -97,6 +98,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		C211ADA42123197D0048CD71 /* UIColor+CYMK.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+CYMK.swift"; sourceTree = "<group>"; };
 		C26E7D872121C185001EF7B9 /* ThemePicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThemePicker.swift; sourceTree = "<group>"; };
 		C26E7D882121C185001EF7B9 /* ThemeKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThemeKit.swift; sourceTree = "<group>"; };
 		C26E7D892121C185001EF7B9 /* ThemeManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThemeManager.swift; sourceTree = "<group>"; };
@@ -270,6 +272,7 @@
 				C285DC1D2121C0250097DE7C /* Color+suggest.swift */,
 				C2D430F22121C4A60038A2CE /* Color+Theme.swift */,
 				C2CFE03D2121C9E3002605D3 /* Color+Transform.swift */,
+				C211ADA42123197D0048CD71 /* UIColor+CYMK.swift */,
 			);
 			path = "UIColor+Extension";
 			sourceTree = "<group>";
@@ -505,6 +508,7 @@
 				C2AC144D2121C31600E6BEB2 /* UIView+Theme.swift in Sources */,
 				C26E7D802121C123001EF7B9 /* Color+Scheme.swift in Sources */,
 				C2AC14532121C31600E6BEB2 /* CALayer+Theme.swift in Sources */,
+				C211ADA52123197D0048CD71 /* UIColor+CYMK.swift in Sources */,
 				C2AC144C2121C31600E6BEB2 /* UINavigationBar+Theme.swift in Sources */,
 				C2AC14552121C31600E6BEB2 /* UITextField+Theme.swift in Sources */,
 				C2AC14542121C31600E6BEB2 /* UILabel+Theme.swift in Sources */,
