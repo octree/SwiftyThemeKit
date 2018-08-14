@@ -26,6 +26,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var lbOver: UILabel!
     @IBOutlet weak var positiveButton: UIButton!
     
+    @IBOutlet weak var imageView: UIImageView!
     
     var primaryColor = UIColor(hex6: ThemePrimaryColors[0])
     var style = ThemeManager.Style.light
@@ -56,6 +57,9 @@ class ViewController: UIViewController {
         navigationController?.navigationBar.isTranslucent = false
         navigationController?.navigationBar.tk.tintColor = \Theme.base.positive
         navigationController?.navigationBar.tk.titleColor = \Theme.text.primary
+        
+        imageView.image = UIImage(named: "Check")?.withRenderingMode(.alwaysTemplate)
+        imageView.tk.tintColor = \Theme.base.positive
     }
     
     func renderButtons() {

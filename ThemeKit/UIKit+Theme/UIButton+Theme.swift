@@ -17,5 +17,6 @@ public extension ThemeKit where Base: UIButton {
             base.setTitleColor(color, for: state)
         })
     }
+    
 }
 

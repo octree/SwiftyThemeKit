@@ -65,6 +65,10 @@
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <state key="normal" title="Button"/>
                                             </button>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qdj-d2-Ory">
+                                                <rect key="frame" x="186" y="156" width="15" height="15"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
                                         </subviews>
                                         <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </view>
@@ -367,6 +371,7 @@
                         <barButtonItem key="rightBarButtonItem" systemItem="compose" id="2Il-Ge-3eu"/>
                     </navigationItem>
                     <connections>
+                        <outlet property="imageView" destination="qdj-d2-Ory" id="zKc-eQ-G2V"/>
                         <outlet property="lb1" destination="lDk-TA-BKc" id="JIY-GQ-aJj"/>
                         <outlet property="lb2" destination="qfu-b7-C86" id="4am-es-iBz"/>
                         <outlet property="lb3" destination="ZSF-QW-hFV" id="Vsi-bb-iyQ"/>
