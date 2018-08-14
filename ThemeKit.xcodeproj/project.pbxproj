@@ -51,6 +51,7 @@
 		C2BA99492122C349008B2D68 /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = C2BA99432122C348008B2D68 /* 1.png */; };
 		C2BA994A2122C349008B2D68 /* 4.png in Resources */ = {isa = PBXBuildFile; fileRef = C2BA99442122C348008B2D68 /* 4.png */; };
 		C2BA994B2122C349008B2D68 /* 6.png in Resources */ = {isa = PBXBuildFile; fileRef = C2BA99452122C348008B2D68 /* 6.png */; };
+		C2BA994D2122C3BA008B2D68 /* SonyData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2BA994C2122C3BA008B2D68 /* SonyData.swift */; };
 		C2CFE03E2121C9E4002605D3 /* Color+Transform.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2CFE03D2121C9E3002605D3 /* Color+Transform.swift */; };
 		C2D430F42121C4A60038A2CE /* Color+Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2D430F22121C4A60038A2CE /* Color+Theme.swift */; };
 		C2D431032121C6AF0038A2CE /* ThemeKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C285DBDB21218D1D0097DE7C /* ThemeKit.framework */; };
@@ -147,6 +148,7 @@
 		C2BA99432122C348008B2D68 /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
 		C2BA99442122C348008B2D68 /* 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 4.png; sourceTree = "<group>"; };
 		C2BA99452122C348008B2D68 /* 6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 6.png; sourceTree = "<group>"; };
+		C2BA994C2122C3BA008B2D68 /* SonyData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SonyData.swift; sourceTree = "<group>"; };
 		C2CFE03D2121C9E3002605D3 /* Color+Transform.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Color+Transform.swift"; sourceTree = "<group>"; };
 		C2D430F22121C4A60038A2CE /* Color+Theme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Color+Theme.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -239,6 +241,7 @@
 				C285DBFD21218EF70097DE7C /* ViewController.swift */,
 				C2BA993B2122C031008B2D68 /* SonyViewController.swift */,
 				C2BA993D2122C040008B2D68 /* SonyTableViewCell.swift */,
+				C2BA994C2122C3BA008B2D68 /* SonyData.swift */,
 				C285DBFF21218EF70097DE7C /* Main.storyboard */,
 				C285DC0221218EF70097DE7C /* Assets.xcassets */,
 				C285DC0421218EF70097DE7C /* LaunchScreen.storyboard */,
@@ -534,6 +537,7 @@
 				C2BA993E2122C040008B2D68 /* SonyTableViewCell.swift in Sources */,
 				C285DBFE21218EF70097DE7C /* ViewController.swift in Sources */,
 				C285DBFC21218EF70097DE7C /* AppDelegate.swift in Sources */,
+				C2BA994D2122C3BA008B2D68 /* SonyData.swift in Sources */,
 				C2BA993C2122C031008B2D68 /* SonyViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
