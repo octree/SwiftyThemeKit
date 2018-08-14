@@ -23,7 +23,7 @@ class SonyTableViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         
-        sceneView.layer.cornerRadius = 12
+        sceneView.layer.cornerRadius = 8
         sceneView.layer.masksToBounds = true
         
         contentView.tk.backgroundColor = \Theme.background.secondary
