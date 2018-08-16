@@ -10,16 +10,27 @@ import UIKit
 
 private var kThemeKitAssociateKey = "kThemeKitAssociateKey"
 
+/// ThemeKit 用来修改 View 的主题
+/// 这里使用的 class 类型，因为如果一个 object 是 let 的，则它的 struct 的类型的属性也不能修改
 public class ThemeKit<Base: AnyObject> {
     
-    public unowned let  base: Base
+    
+    /// 一般是一个 UIView 或者它的子类
+    public unowned let base: Base
+    
+    /// String：ThemePicker
     private var pickers = [String: Any]()
+    
+    /// String: [UIControl.State: ThemePicker]
     private var statePickers = [String: [UInt: Any]]()
     init(_ base: Base) {
         self.base = base
     }
 }
 
+
+// MARK: - Picker
+// 注册 picker，可以
 public extension ThemeKit {
     
     
@@ -47,6 +58,14 @@ public extension ThemeKit {
         return pickers[key] as? ThemePicker<T>
     }
     
+    
+    /// 设置 statePicker
+    ///
+    /// - Parameters:
+    ///   - keyPath: Theme KeyPath, 用来指定主题
+    ///   - state:  UIControl.State
+    ///   - render: 渲染函数
+    ///   - key: 对应不同属性，这里默认使用 #function
     public func setStatePicker<T>(keyPath: KeyPath<Theme, T>?, forState state: UIControl.State, render: @escaping (T) -> Void, key: String = #function) {
         var pickers = statePickers[key] ?? [UInt: Any]()
         if let kp = keyPath {
@@ -58,6 +77,8 @@ public extension ThemeKit {
     }
 }
 
+
+///  兼容 ThemeKit 的协议
 public protocol ThemeKitCompatible: class {
     
     associatedtype CompatibleType: AnyObject
@@ -66,6 +87,8 @@ public protocol ThemeKitCompatible: class {
 }
 
 
+// 添加默认实现
+// 实现这个协议之后，对应的类和实例就有了 tk 属性
 public extension ThemeKitCompatible {
     
     public static var tk: ThemeKit<Self>.Type {

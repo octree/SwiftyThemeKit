@@ -1,5 +1,18 @@
+//
+//  Color+Scheme.swift
+//  Color+Scheme
+//
+//  Created by Octree on 2018/8/13.
+//  Copyright © 2018年 Octree. All rights reserved.
+//
+
+
 import UIKit
 
+
+///  根据不同的配色技巧生成不同的配色方案
+///  包含了常用的配色技巧，比如互补色、互补色拆分、相近色等
+///  共包含 18 中常用的配色技巧
 public extension UIColor {
     
     public func scheme(from degrees: [CGFloat]) -> [UIColor] {

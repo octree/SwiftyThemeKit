@@ -8,8 +8,9 @@
 
 import Foundation
 
+///  支持 CYMK 颜色模型
 public extension UIColor {
-    
+    /// 获取 CMYL 颜色值， 区间 [0, 1]
     public var cmyk: (CGFloat, CGFloat, CGFloat, CGFloat) {
         
         let (r, g, b) = rgbComponents
@@ -29,8 +30,16 @@ public extension UIColor {
         let k = minCMY
         return (c, m, y, k)
     }
+
     
-    //    CYMK
+    /// 根据 CYMK 的值初始化 UIColor
+    /// CYMK 的区间 [0, 1]
+    ///
+    /// - Parameters:
+    ///   - cyan: cyan
+    ///   - magenta: magenta
+    ///   - yellow: yello
+    ///   - key: key
     public convenience init(cyan: CGFloat, magenta: CGFloat, yellow: CGFloat, key: CGFloat) {
         
         let c = cyan * (1 - key) + key

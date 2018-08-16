@@ -1,5 +1,19 @@
+//
+//  Color+Saturation.swift
+//  Color+Saturation
+//
+//  Created by Octree on 2018/8/13.
+//  Copyright © 2018年 Octree. All rights reserved.
+//
+
+
 import UIKit
 
+
+// 或者不同饱和度的颜色
+// 可以参考 Google 或者其他公司的饱和度方案
+// Google MD 设计方案分为 10 种饱和度
+// 即本代码中的 S50 - S900
 public extension UIColor {
     
     public var S50: UIColor {
