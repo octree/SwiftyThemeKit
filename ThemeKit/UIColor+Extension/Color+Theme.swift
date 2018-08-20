@@ -204,9 +204,9 @@ public extension UIColor {
         let background = Theme.Background(bar: UIColor(hex6: 0x333333),
                                           primary: UIColor(hex6: 0x333333),
                                           secondary: UIColor(hex6: 0x333333),
-                                          scene: UIColor(hex6: 0x000000))
+                                          scene: UIColor(hex6: 0x1c1c1c))
         
-        let border = Theme.Border(primary: UIColor(hex6: 0x444444),
+        let border = Theme.Border(primary: UIColor(hex6: 0x434343),
                                   secondary: UIColor(hex6: 0x222222))
         
         let text = Theme.Text(primary: UIColor(hex6: 0xffffff),
