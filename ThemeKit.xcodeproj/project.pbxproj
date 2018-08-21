@@ -57,6 +57,8 @@
 		C2D430F42121C4A60038A2CE /* Color+Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2D430F22121C4A60038A2CE /* Color+Theme.swift */; };
 		C2D431032121C6AF0038A2CE /* ThemeKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C285DBDB21218D1D0097DE7C /* ThemeKit.framework */; };
 		C2D431042121C6AF0038A2CE /* ThemeKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C285DBDB21218D1D0097DE7C /* ThemeKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C2FDC8D6212BF931002FF9BD /* NipponTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2FDC8D5212BF931002FF9BD /* NipponTableViewController.swift */; };
+		C2FDC8D8212BFAA5002FF9BD /* NipponTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2FDC8D7212BFAA5002FF9BD /* NipponTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -153,6 +155,8 @@
 		C2BA994C2122C3BA008B2D68 /* SonyData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SonyData.swift; sourceTree = "<group>"; };
 		C2CFE03D2121C9E3002605D3 /* Color+RGB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Color+RGB.swift"; sourceTree = "<group>"; };
 		C2D430F22121C4A60038A2CE /* Color+Theme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Color+Theme.swift"; sourceTree = "<group>"; };
+		C2FDC8D5212BF931002FF9BD /* NipponTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NipponTableViewController.swift; sourceTree = "<group>"; };
+		C2FDC8D7212BFAA5002FF9BD /* NipponTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NipponTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -242,12 +246,14 @@
 				C2AC145C2121C3A600E6BEB2 /* ThemePrimaryColors.swift */,
 				C285DBFD21218EF70097DE7C /* ViewController.swift */,
 				C2BA993B2122C031008B2D68 /* SonyViewController.swift */,
+				C2FDC8D5212BF931002FF9BD /* NipponTableViewController.swift */,
 				C2BA993D2122C040008B2D68 /* SonyTableViewCell.swift */,
 				C2BA994C2122C3BA008B2D68 /* SonyData.swift */,
 				C285DBFF21218EF70097DE7C /* Main.storyboard */,
 				C285DC0221218EF70097DE7C /* Assets.xcassets */,
 				C285DC0421218EF70097DE7C /* LaunchScreen.storyboard */,
 				C285DC0721218EF70097DE7C /* Info.plist */,
+				C2FDC8D7212BFAA5002FF9BD /* NipponTableViewCell.swift */,
 			);
 			path = Demo;
 			sourceTree = "<group>";
@@ -538,7 +544,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				C2AC145D2121C3A600E6BEB2 /* ThemePrimaryColors.swift in Sources */,
+				C2FDC8D6212BF931002FF9BD /* NipponTableViewController.swift in Sources */,
 				C2BA993E2122C040008B2D68 /* SonyTableViewCell.swift in Sources */,
+				C2FDC8D8212BFAA5002FF9BD /* NipponTableViewCell.swift in Sources */,
 				C285DBFE21218EF70097DE7C /* ViewController.swift in Sources */,
 				C285DBFC21218EF70097DE7C /* AppDelegate.swift in Sources */,
 				C2BA994D2122C3BA008B2D68 /* SonyData.swift in Sources */,
