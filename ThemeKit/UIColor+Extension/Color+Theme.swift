@@ -146,17 +146,17 @@ public extension UIColor {
     
     /// 以当前颜色为主题颜色，生成夜间主题配色方案
     public var nightTheme: Theme {
-        let r = UIColor(hex6: 0x1C2835)
+        let r = UIColor(hex6: 0x1B2836) // old: 1C2835
         let base = Theme.Base(positive: self,
                               darkPositive: darken(byRatio: 0.25),
                               destructive: self.destructiveColor)
         
-        let background = Theme.Background(bar: UIColor(hex6: 0x263345),
+        let background = Theme.Background(bar: UIColor(hex6: 0x243447), // old: 263345
                                           primary: r,
-                                          secondary: UIColor(hex6: 0x263345),
+                                          secondary: UIColor(hex6: 0x141D26), // old : 263345
                                           scene: r)
-        let border = Theme.Border(primary: UIColor(hex6: 0x101822),
-                                  secondary: UIColor(hex6: 0x101822))
+        let border = Theme.Border(primary: UIColor(hex6: 0x080808),
+                                  secondary: UIColor(hex6: 0x080808))
         
         let text = Theme.Text(primary: UIColor(hex6: 0xffffff),
                               secondary:  UIColor(hex6: 0xeeeeee),
