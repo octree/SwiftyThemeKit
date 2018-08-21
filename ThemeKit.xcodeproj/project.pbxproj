@@ -59,6 +59,7 @@
 		C2D431042121C6AF0038A2CE /* ThemeKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C285DBDB21218D1D0097DE7C /* ThemeKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C2FDC8D6212BF931002FF9BD /* NipponTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2FDC8D5212BF931002FF9BD /* NipponTableViewController.swift */; };
 		C2FDC8D8212BFAA5002FF9BD /* NipponTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2FDC8D7212BFAA5002FF9BD /* NipponTableViewCell.swift */; };
+		C2FDC8DA212BFB3A002FF9BD /* nippon_colors.txt in Resources */ = {isa = PBXBuildFile; fileRef = C2FDC8D9212BFB3A002FF9BD /* nippon_colors.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -157,6 +158,7 @@
 		C2D430F22121C4A60038A2CE /* Color+Theme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Color+Theme.swift"; sourceTree = "<group>"; };
 		C2FDC8D5212BF931002FF9BD /* NipponTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NipponTableViewController.swift; sourceTree = "<group>"; };
 		C2FDC8D7212BFAA5002FF9BD /* NipponTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NipponTableViewCell.swift; sourceTree = "<group>"; };
+		C2FDC8D9212BFB3A002FF9BD /* nippon_colors.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = nippon_colors.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -286,6 +288,7 @@
 		C2BA993F2122C33D008B2D68 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				C2FDC8D9212BFB3A002FF9BD /* nippon_colors.txt */,
 				C2BA99432122C348008B2D68 /* 1.png */,
 				C2BA99402122C348008B2D68 /* 2.png */,
 				C2BA99422122C348008B2D68 /* 3.png */,
@@ -479,6 +482,7 @@
 				C2BA994B2122C349008B2D68 /* 6.png in Resources */,
 				C2BA99482122C349008B2D68 /* 3.png in Resources */,
 				C2BA994A2122C349008B2D68 /* 4.png in Resources */,
+				C2FDC8DA212BFB3A002FF9BD /* nippon_colors.txt in Resources */,
 				C2BA99462122C349008B2D68 /* 2.png in Resources */,
 				C285DC0121218EF70097DE7C /* Main.storyboard in Resources */,
 				C2BA99492122C349008B2D68 /* 1.png in Resources */,

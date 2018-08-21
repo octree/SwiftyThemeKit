@@ -7,84 +7,62 @@
 //
 
 import UIKit
+import ThemeKit
+
+struct Nippon {
+    
+    var hex: String
+    var name: String
+    var nameEN: String
+}
 
 class NipponTableViewController: UITableViewController {
 
+    lazy var colors: [Nippon] = {
+        
+        let path = Bundle.main.path(forResource: "nippon_colors", ofType: "txt")!
+        let text = try! String(contentsOfFile: path)
+        let lines = text.split(separator: "\n")
+        return lines.map {
+            line in
+            let arr = line.split(separator: " ")
+            return Nippon(hex: String(arr[0]), name: String(arr[1]), nameEN: String(arr[2]))
+        }
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
+        view.tk.backgroundColor = \Theme.background.primary
+        tableView.tk.backgroundColor = \Theme.background.primary
+        tableView.tk.separatorColor = \Theme.border.primary
     }
 
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return colors.count
     }
 
-    /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-
-        // Configure the cell...
-
+        let cell = tableView.dequeueReusableCell(withIdentifier: "NipponTableViewCell", for: indexPath) as! NipponTableViewCell
+        
+        let nippon = colors[indexPath.row]
+        cell.colorView.backgroundColor = UIColor(hexString: nippon.hex)
+        cell.nameLabel.text = "\(nippon.name) \(nippon.nameEN)"
         return cell
     }
-    */
-
-    /*
-    // Override to support conditional editing of the table view.
-    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the specified item to be editable.
-        return true
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        let nippon = colors[indexPath.row]
+        ThemeManager.shared.changeTheme(with: UIColor(hexString: nippon.hex)!, style: ThemeManager.shared.style)
     }
-    */
-
-    /*
-    // Override to support editing the table view.
-    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
-        if editingStyle == .delete {
-            // Delete the row from the data source
-            tableView.deleteRows(at: [indexPath], with: .fade)
-        } else if editingStyle == .insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
-    }
-    */
-
-    /*
-    // Override to support rearranging the table view.
-    override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
-
-    }
-    */
-
-    /*
-    // Override to support conditional rearranging of the table view.
-    override func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the item to be re-orderable.
-        return true
-    }
-    */
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
