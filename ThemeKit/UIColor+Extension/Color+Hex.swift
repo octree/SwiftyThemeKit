@@ -19,4 +19,23 @@ public extension UIColor {
         let blue    = CGFloat( hex6 & 0x0000FF       ) / divisor
         self.init(red: red, green: green, blue: blue, alpha: alpha)
     }
+ 
+    public convenience init?(hexString: String, alpha: CGFloat = 1.0) {
+        
+        var hex = hexString
+        if hex.hasPrefix("#") {
+            hex = String(hex[hex.index(after: hex.startIndex)...])
+        }
+        
+        guard let hexVal = Int(hex, radix: 16) else {
+            self.init()
+            return nil
+        }
+        
+        if hex.count == 6 {
+            self.init(hex6: UInt32(hexVal), alpha: alpha)
+        } else {
+            return nil
+        }
+    }
 }
