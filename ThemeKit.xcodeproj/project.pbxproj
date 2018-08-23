@@ -243,19 +243,11 @@
 		C285DBFA21218EF70097DE7C /* Demo */ = {
 			isa = PBXGroup;
 			children = (
+				C2EC6D20212E5B1600C7438B /* Controller */,
 				C2BA993F2122C33D008B2D68 /* Resource */,
 				C285DBFB21218EF70097DE7C /* AppDelegate.swift */,
 				C2AC145C2121C3A600E6BEB2 /* ThemePrimaryColors.swift */,
-				C285DBFD21218EF70097DE7C /* ViewController.swift */,
-				C2BA993B2122C031008B2D68 /* SonyViewController.swift */,
-				C2FDC8D5212BF931002FF9BD /* NipponTableViewController.swift */,
-				C2BA993D2122C040008B2D68 /* SonyTableViewCell.swift */,
-				C2BA994C2122C3BA008B2D68 /* SonyData.swift */,
-				C285DBFF21218EF70097DE7C /* Main.storyboard */,
-				C285DC0221218EF70097DE7C /* Assets.xcassets */,
-				C285DC0421218EF70097DE7C /* LaunchScreen.storyboard */,
 				C285DC0721218EF70097DE7C /* Info.plist */,
-				C2FDC8D7212BFAA5002FF9BD /* NipponTableViewCell.swift */,
 			);
 			path = Demo;
 			sourceTree = "<group>";
@@ -288,6 +280,9 @@
 		C2BA993F2122C33D008B2D68 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				C285DBFF21218EF70097DE7C /* Main.storyboard */,
+				C285DC0221218EF70097DE7C /* Assets.xcassets */,
+				C285DC0421218EF70097DE7C /* LaunchScreen.storyboard */,
 				C2FDC8D9212BFB3A002FF9BD /* nippon_colors.txt */,
 				C2BA99432122C348008B2D68 /* 1.png */,
 				C2BA99402122C348008B2D68 /* 2.png */,
@@ -321,6 +316,43 @@
 				C2AC143C2121C31600E6BEB2 /* UIView+Theme.swift */,
 			);
 			path = "UIKit+Theme";
+			sourceTree = "<group>";
+		};
+		C2EC6D1F212E5B0B00C7438B /* Nippon */ = {
+			isa = PBXGroup;
+			children = (
+				C2FDC8D5212BF931002FF9BD /* NipponTableViewController.swift */,
+				C2FDC8D7212BFAA5002FF9BD /* NipponTableViewCell.swift */,
+			);
+			path = Nippon;
+			sourceTree = "<group>";
+		};
+		C2EC6D20212E5B1600C7438B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C2EC6D22212E5B2B00C7438B /* Sony */,
+				C2EC6D21212E5B2400C7438B /* Home */,
+				C2EC6D1F212E5B0B00C7438B /* Nippon */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		C2EC6D21212E5B2400C7438B /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				C285DBFD21218EF70097DE7C /* ViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		C2EC6D22212E5B2B00C7438B /* Sony */ = {
+			isa = PBXGroup;
+			children = (
+				C2BA993B2122C031008B2D68 /* SonyViewController.swift */,
+				C2BA993D2122C040008B2D68 /* SonyTableViewCell.swift */,
+				C2BA994C2122C3BA008B2D68 /* SonyData.swift */,
+			);
+			path = Sony;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
