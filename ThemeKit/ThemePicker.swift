@@ -35,6 +35,8 @@ public final class ThemePicker<Value> {
         NotificationCenter.default.addObserver(self, selector: #selector(themeUpdated), name: ThemeManager.ThemeUpdate, object: nil)
     }
     
+    
+    /// 接收到需要的通知后，更新组件的主题
     @objc private func themeUpdated() {
         render(ThemeManager.shared.theme[keyPath: keyPath])
     }
