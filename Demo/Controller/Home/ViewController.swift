@@ -95,17 +95,20 @@ class ViewController: UIViewController {
     @IBAction func selectLight(_ sender: UIButton) {
         
         style = .light
+        let color = ThemeManager.shared.primaryColor
         ThemeManager.shared.changeTheme(with: color, style: style)
     }
     @IBAction func selectDark(_ sender: UIButton) {
         
         style = .dark
+        let color = ThemeManager.shared.primaryColor
         ThemeManager.shared.changeTheme(with: color, style: style)
     }
     
     @IBAction func selectNight(_ sender: UIButton) {
         
         style = .night
+        let color = ThemeManager.shared.primaryColor
         ThemeManager.shared.changeTheme(with: color, style: style)
     }
 }
