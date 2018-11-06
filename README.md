@@ -1,6 +1,8 @@
 # ThemeKit
 
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
+[![CocoaPods Compatible](https://img.shields.io/cocoapods/v/SwiftyThemeKit.svg)](https://img.shields.io/cocoapods/v/SwiftyThemeKit.svg)
+![Platform](https://img.shields.io/cocoapods/p/SwiftyThemeKit.svg?style=flat)
 
 自动产生配色方案，一键切换夜间模式。
 
@@ -48,7 +50,15 @@ ThemeManager.shared.changeTheme(with: anotherColor, style: .night)
 ### carthage
 
 ```
-github 'octree/ThemeKit'  ~> 0.1.4
+github 'octree/ThemeKit'  ~> 0.1.5
+```
+
+
+
+### CocoaPods
+
+```
+pod 'SwiftyWave', '~> 0.1.5'
 ```
 
 
