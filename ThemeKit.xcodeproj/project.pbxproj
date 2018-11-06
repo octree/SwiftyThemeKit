@@ -331,18 +331,18 @@
 			isa = PBXGroup;
 			children = (
 				C2EC6D22212E5B2B00C7438B /* Sony */,
-				C2EC6D21212E5B2400C7438B /* Home */,
+				C2EC6D21212E5B2400C7438B /* Theme */,
 				C2EC6D1F212E5B0B00C7438B /* Nippon */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
 		};
-		C2EC6D21212E5B2400C7438B /* Home */ = {
+		C2EC6D21212E5B2400C7438B /* Theme */ = {
 			isa = PBXGroup;
 			children = (
 				C285DBFD21218EF70097DE7C /* ViewController.swift */,
 			);
-			path = Home;
+			path = Theme;
 			sourceTree = "<group>";
 		};
 		C2EC6D22212E5B2B00C7438B /* Sony */ = {
