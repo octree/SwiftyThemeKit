@@ -19,10 +19,10 @@ public class ThemeKit<Base: AnyObject> {
     public unowned let base: Base
     
     /// String：ThemePicker
-    private var pickers = [String: Any]()
+    fileprivate var pickers = [String: Any]()
     
     /// String: [UIControl.State: ThemePicker]
-    private var statePickers = [String: [UInt: Any]]()
+    fileprivate var statePickers = [String: [UInt: Any]]()
     init(_ base: Base) {
         self.base = base
     }
