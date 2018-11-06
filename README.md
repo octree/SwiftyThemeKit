@@ -1,4 +1,4 @@
-# ThemeKit
+# SwiftyThemeKit
 
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 [![CocoaPods Compatible](https://img.shields.io/cocoapods/v/SwiftyThemeKit.svg)](https://img.shields.io/cocoapods/v/SwiftyThemeKit.svg)
@@ -50,7 +50,7 @@ ThemeManager.shared.changeTheme(with: anotherColor, style: .night)
 ### carthage
 
 ```
-github 'octree/ThemeKit'  ~> 0.1.5
+github 'octree/SwiftyThemeKit'  ~> 0.1.5
 ```
 
 
@@ -58,7 +58,7 @@ github 'octree/ThemeKit'  ~> 0.1.5
 ### CocoaPods
 
 ```
-pod 'SwiftyWave', '~> 0.1.5'
+pod 'SwiftyThemeKit', '~> 0.1.5'
 ```
 
 
