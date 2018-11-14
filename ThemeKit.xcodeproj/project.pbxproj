@@ -17,9 +17,9 @@
 		C26E7D8A2121C185001EF7B9 /* ThemePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = C26E7D872121C185001EF7B9 /* ThemePicker.swift */; };
 		C26E7D8B2121C185001EF7B9 /* ThemeKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = C26E7D882121C185001EF7B9 /* ThemeKit.swift */; };
 		C26E7D8C2121C185001EF7B9 /* ThemeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C26E7D892121C185001EF7B9 /* ThemeManager.swift */; };
-		C285DBE521218D1D0097DE7C /* ThemeKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C285DBDB21218D1D0097DE7C /* ThemeKit.framework */; };
+		C285DBE521218D1D0097DE7C /* SwiftyThemeKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C285DBDB21218D1D0097DE7C /* SwiftyThemeKit.framework */; };
 		C285DBEA21218D1D0097DE7C /* ThemeKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C285DBE921218D1D0097DE7C /* ThemeKitTests.swift */; };
-		C285DBEC21218D1D0097DE7C /* ThemeKit.h in Headers */ = {isa = PBXBuildFile; fileRef = C285DBDE21218D1D0097DE7C /* ThemeKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C285DBEC21218D1D0097DE7C /* SwiftyThemeKit.h in Headers */ = {isa = PBXBuildFile; fileRef = C285DBDE21218D1D0097DE7C /* SwiftyThemeKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C285DBFC21218EF70097DE7C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C285DBFB21218EF70097DE7C /* AppDelegate.swift */; };
 		C285DBFE21218EF70097DE7C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C285DBFD21218EF70097DE7C /* ViewController.swift */; };
 		C285DC0121218EF70097DE7C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C285DBFF21218EF70097DE7C /* Main.storyboard */; };
@@ -55,8 +55,8 @@
 		C2BA994D2122C3BA008B2D68 /* SonyData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2BA994C2122C3BA008B2D68 /* SonyData.swift */; };
 		C2CFE03E2121C9E4002605D3 /* Color+RGB.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2CFE03D2121C9E3002605D3 /* Color+RGB.swift */; };
 		C2D430F42121C4A60038A2CE /* Color+Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2D430F22121C4A60038A2CE /* Color+Theme.swift */; };
-		C2D431032121C6AF0038A2CE /* ThemeKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C285DBDB21218D1D0097DE7C /* ThemeKit.framework */; };
-		C2D431042121C6AF0038A2CE /* ThemeKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C285DBDB21218D1D0097DE7C /* ThemeKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C2D431032121C6AF0038A2CE /* SwiftyThemeKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C285DBDB21218D1D0097DE7C /* SwiftyThemeKit.framework */; };
+		C2D431042121C6AF0038A2CE /* SwiftyThemeKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C285DBDB21218D1D0097DE7C /* SwiftyThemeKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C2FDC8D6212BF931002FF9BD /* NipponTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2FDC8D5212BF931002FF9BD /* NipponTableViewController.swift */; };
 		C2FDC8D8212BFAA5002FF9BD /* NipponTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2FDC8D7212BFAA5002FF9BD /* NipponTableViewCell.swift */; };
 		C2FDC8DA212BFB3A002FF9BD /* nippon_colors.txt in Resources */ = {isa = PBXBuildFile; fileRef = C2FDC8D9212BFB3A002FF9BD /* nippon_colors.txt */; };
@@ -93,7 +93,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				C2D431042121C6AF0038A2CE /* ThemeKit.framework in Embed Frameworks */,
+				C2D431042121C6AF0038A2CE /* SwiftyThemeKit.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -105,8 +105,8 @@
 		C26E7D872121C185001EF7B9 /* ThemePicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThemePicker.swift; sourceTree = "<group>"; };
 		C26E7D882121C185001EF7B9 /* ThemeKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThemeKit.swift; sourceTree = "<group>"; };
 		C26E7D892121C185001EF7B9 /* ThemeManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThemeManager.swift; sourceTree = "<group>"; };
-		C285DBDB21218D1D0097DE7C /* ThemeKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ThemeKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C285DBDE21218D1D0097DE7C /* ThemeKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ThemeKit.h; sourceTree = "<group>"; };
+		C285DBDB21218D1D0097DE7C /* SwiftyThemeKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftyThemeKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C285DBDE21218D1D0097DE7C /* SwiftyThemeKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftyThemeKit.h; sourceTree = "<group>"; };
 		C285DBDF21218D1D0097DE7C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C285DBE421218D1D0097DE7C /* ThemeKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ThemeKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C285DBE921218D1D0097DE7C /* ThemeKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeKitTests.swift; sourceTree = "<group>"; };
@@ -173,7 +173,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C285DBE521218D1D0097DE7C /* ThemeKit.framework in Frameworks */,
+				C285DBE521218D1D0097DE7C /* SwiftyThemeKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -181,7 +181,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C2D431032121C6AF0038A2CE /* ThemeKit.framework in Frameworks */,
+				C2D431032121C6AF0038A2CE /* SwiftyThemeKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -198,7 +198,7 @@
 		C285DBD121218D1D0097DE7C = {
 			isa = PBXGroup;
 			children = (
-				C285DBDD21218D1D0097DE7C /* ThemeKit */,
+				C285DBDD21218D1D0097DE7C /* SwiftyThemeKit */,
 				C285DBE821218D1D0097DE7C /* ThemeKitTests */,
 				C285DBFA21218EF70097DE7C /* Demo */,
 				C285DC0F21218EF80097DE7C /* DemoTests */,
@@ -209,7 +209,7 @@
 		C285DBDC21218D1D0097DE7C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C285DBDB21218D1D0097DE7C /* ThemeKit.framework */,
+				C285DBDB21218D1D0097DE7C /* SwiftyThemeKit.framework */,
 				C285DBE421218D1D0097DE7C /* ThemeKitTests.xctest */,
 				C285DBF921218EF70097DE7C /* Demo.app */,
 				C285DC0C21218EF80097DE7C /* DemoTests.xctest */,
@@ -217,7 +217,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		C285DBDD21218D1D0097DE7C /* ThemeKit */ = {
+		C285DBDD21218D1D0097DE7C /* SwiftyThemeKit */ = {
 			isa = PBXGroup;
 			children = (
 				C2CFE03C2121C09C002605D3 /* UIKit+Theme */,
@@ -225,10 +225,10 @@
 				C26E7D882121C185001EF7B9 /* ThemeKit.swift */,
 				C26E7D892121C185001EF7B9 /* ThemeManager.swift */,
 				C26E7D872121C185001EF7B9 /* ThemePicker.swift */,
-				C285DBDE21218D1D0097DE7C /* ThemeKit.h */,
+				C285DBDE21218D1D0097DE7C /* SwiftyThemeKit.h */,
 				C285DBDF21218D1D0097DE7C /* Info.plist */,
 			);
-			path = ThemeKit;
+			path = SwiftyThemeKit;
 			sourceTree = "<group>";
 		};
 		C285DBE821218D1D0097DE7C /* ThemeKitTests */ = {
@@ -362,16 +362,16 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C285DBEC21218D1D0097DE7C /* ThemeKit.h in Headers */,
+				C285DBEC21218D1D0097DE7C /* SwiftyThemeKit.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		C285DBDA21218D1D0097DE7C /* ThemeKit */ = {
+		C285DBDA21218D1D0097DE7C /* SwiftyThemeKit */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C285DBEF21218D1D0097DE7C /* Build configuration list for PBXNativeTarget "ThemeKit" */;
+			buildConfigurationList = C285DBEF21218D1D0097DE7C /* Build configuration list for PBXNativeTarget "SwiftyThemeKit" */;
 			buildPhases = (
 				C285DBD621218D1D0097DE7C /* Headers */,
 				C285DBD721218D1D0097DE7C /* Sources */,
@@ -382,9 +382,9 @@
 			);
 			dependencies = (
 			);
-			name = ThemeKit;
+			name = SwiftyThemeKit;
 			productName = ThemeKit;
-			productReference = C285DBDB21218D1D0097DE7C /* ThemeKit.framework */;
+			productReference = C285DBDB21218D1D0097DE7C /* SwiftyThemeKit.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		C285DBE321218D1D0097DE7C /* ThemeKitTests */ = {
@@ -481,7 +481,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				C285DBDA21218D1D0097DE7C /* ThemeKit */,
+				C285DBDA21218D1D0097DE7C /* SwiftyThemeKit */,
 				C285DBE321218D1D0097DE7C /* ThemeKitTests */,
 				C285DBF821218EF70097DE7C /* Demo */,
 				C285DC0B21218EF80097DE7C /* DemoTests */,
@@ -603,7 +603,7 @@
 /* Begin PBXTargetDependency section */
 		C285DBE721218D1D0097DE7C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = C285DBDA21218D1D0097DE7C /* ThemeKit */;
+			target = C285DBDA21218D1D0097DE7C /* SwiftyThemeKit */;
 			targetProxy = C285DBE621218D1D0097DE7C /* PBXContainerItemProxy */;
 		};
 		C285DC0E21218EF80097DE7C /* PBXTargetDependency */ = {
@@ -613,7 +613,7 @@
 		};
 		C2D431062121C6AF0038A2CE /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = C285DBDA21218D1D0097DE7C /* ThemeKit */;
+			target = C285DBDA21218D1D0097DE7C /* SwiftyThemeKit */;
 			targetProxy = C2D431052121C6AF0038A2CE /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -690,7 +690,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -748,7 +748,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -771,14 +771,14 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = ThemeKit/Info.plist;
+				INFOPLIST_FILE = SwiftyThemeKit/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = me.octree.ThemeKit;
+				PRODUCT_BUNDLE_IDENTIFIER = me.octree.SwiftyThemeKit;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -798,14 +798,14 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = ThemeKit/Info.plist;
+				INFOPLIST_FILE = SwiftyThemeKit/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = me.octree.ThemeKit;
+				PRODUCT_BUNDLE_IDENTIFIER = me.octree.SwiftyThemeKit;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.2;
@@ -863,6 +863,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = Demo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -886,6 +887,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = Demo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -951,7 +953,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C285DBEF21218D1D0097DE7C /* Build configuration list for PBXNativeTarget "ThemeKit" */ = {
+		C285DBEF21218D1D0097DE7C /* Build configuration list for PBXNativeTarget "SwiftyThemeKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C285DBF021218D1D0097DE7C /* Debug */,

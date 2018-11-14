@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import ThemeKit
+import SwiftyThemeKit
 
 struct Nippon {
     
@@ -54,15 +54,15 @@ class NipponTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "NipponTableViewCell", for: indexPath) as! NipponTableViewCell
         
         let nippon = colors[indexPath.row]
-        cell.colorView.backgroundColor = UIColor(hexString: nippon.hex)
+//        cell.colorView.backgroundColor = UIColor(hexString: nippon.hex)
         cell.nameLabel.text = "\(nippon.name) \(nippon.nameEN)"
         return cell
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
-        let nippon = colors[indexPath.row]
-        ThemeManager.shared.changeTheme(with: UIColor(hexString: nippon.hex)!, style: ThemeManager.shared.style)
+//        let nippon = colors[indexPath.row]
+//        ThemeManager.shared.changeTheme(with: UIColor(hexString: nippon.hex)!, style: ThemeManager.shared.style)
     }
 
 }

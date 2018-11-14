@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import ThemeKit
+import SwiftyThemeKit
 
 class ViewController: UIViewController {
     
@@ -38,18 +38,18 @@ class ViewController: UIViewController {
     
     func renderButtons() {
         
-        for (index,button) in colorButtons.enumerated() {
-            button.tag = index
-            button.backgroundColor = UIColor(hex6: ThemePrimaryColors[index])
-        }
+//        for (index,button) in colorButtons.enumerated() {
+//            button.tag = index
+//            button.backgroundColor = UIColor(hex: ThemePrimaryColors[index])
+//        }
     }
     
     func updateSatButtons() {
         
-        let colors = self.primaryColor.suggestColors
-        for (index, button) in satButtons.enumerated() {
-            button.backgroundColor = colors[index]
-        }
+//        let colors = self.primaryColor.suggestColors
+//        for (index, button) in satButtons.enumerated() {
+//            button.backgroundColor = colors[index]
+//        }
     }
     
     @IBAction func satButtonTapped(_ sender: UIButton) {

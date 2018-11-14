@@ -15,8 +15,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "C285DBDA21218D1D0097DE7C"
-               BuildableName = "ThemeKit.framework"
-               BlueprintName = "ThemeKit"
+               BuildableName = "SwiftyThemeKit.framework"
+               BlueprintName = "SwiftyThemeKit"
                ReferencedContainer = "container:ThemeKit.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -43,8 +43,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "C285DBDA21218D1D0097DE7C"
-            BuildableName = "ThemeKit.framework"
-            BlueprintName = "ThemeKit"
+            BuildableName = "SwiftyThemeKit.framework"
+            BlueprintName = "SwiftyThemeKit"
             ReferencedContainer = "container:ThemeKit.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -65,8 +65,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "C285DBDA21218D1D0097DE7C"
-            BuildableName = "ThemeKit.framework"
-            BlueprintName = "ThemeKit"
+            BuildableName = "SwiftyThemeKit.framework"
+            BlueprintName = "SwiftyThemeKit"
             ReferencedContainer = "container:ThemeKit.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -83,8 +83,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "C285DBDA21218D1D0097DE7C"
-            BuildableName = "ThemeKit.framework"
-            BlueprintName = "ThemeKit"
+            BuildableName = "SwiftyThemeKit.framework"
+            BlueprintName = "SwiftyThemeKit"
             ReferencedContainer = "container:ThemeKit.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

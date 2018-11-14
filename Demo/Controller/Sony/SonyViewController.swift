@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import ThemeKit
+import SwiftyThemeKit
 
 class SonyViewController: UIViewController  {
     @IBOutlet weak var tableView: UITableView!
