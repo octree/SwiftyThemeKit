@@ -11,8 +11,7 @@ import Foundation
 ///  支持 CYMK 颜色模型
 public extension UIColor {
     /// 获取 CMYL 颜色值， 区间 [0, 1]
-    public var cmyk: (CGFloat, CGFloat, CGFloat, CGFloat) {
-        
+    var cmyk: (CGFloat, CGFloat, CGFloat, CGFloat) {
         let (r, g, b) = rgbComponents
         
         if (r == 0 && g == 0 && b == 0) {
@@ -40,8 +39,7 @@ public extension UIColor {
     ///   - magenta: magenta
     ///   - yellow: yello
     ///   - key: key
-    public convenience init(cyan: CGFloat, magenta: CGFloat, yellow: CGFloat, key: CGFloat) {
-        
+    convenience init(cyan: CGFloat, magenta: CGFloat, yellow: CGFloat, key: CGFloat) {
         let c = cyan * (1 - key) + key
         let m = magenta * (1 - key) + key
         let y = yellow * (1 - key) + key

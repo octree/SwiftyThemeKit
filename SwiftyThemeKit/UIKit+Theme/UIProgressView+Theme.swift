@@ -10,7 +10,7 @@ import UIKit
 
 public extension ThemeKit where Base: UIProgressView {
     
-    public var progressTintColor: KeyPath<Theme, UIColor>? {
+    var progressTintColor: KeyPath<Theme, UIColor>? {
         
         set {
             let base = self.base
@@ -24,7 +24,7 @@ public extension ThemeKit where Base: UIProgressView {
         }
     }
     
-    public var trackTintColor: KeyPath<Theme, UIColor>? {
+    var trackTintColor: KeyPath<Theme, UIColor>? {
         
         set {
             let base = self.base

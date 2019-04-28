@@ -10,8 +10,7 @@ import UIKit
 
 public extension ThemeKit where Base: UITableView {
     
-    public var separatorColor: KeyPath<Theme, UIColor>? {
-        
+    var separatorColor: KeyPath<Theme, UIColor>? {
         set {
             let base = self.base
             setPicker(keyPath: newValue, render: {
@@ -24,8 +23,7 @@ public extension ThemeKit where Base: UITableView {
         }
     }
     
-    public var sectionIndexColor: KeyPath<Theme, UIColor>? {
-        
+    var sectionIndexColor: KeyPath<Theme, UIColor>? {
         set {
             let base = self.base
             setPicker(keyPath: newValue, render: {
@@ -38,8 +36,7 @@ public extension ThemeKit where Base: UITableView {
         }
     }
     
-    public var sectionIndexBackgroundColor: KeyPath<Theme, UIColor>? {
-        
+    var sectionIndexBackgroundColor: KeyPath<Theme, UIColor>? {
         set {
             let base = self.base
             setPicker(keyPath: newValue, render: {

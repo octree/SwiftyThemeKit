@@ -10,8 +10,7 @@ import UIKit
 
 public extension ThemeKit where Base: CALayer {
     
-    public var backgroundColor: KeyPath<Theme, UIColor>? {
-        
+    var backgroundColor: KeyPath<Theme, UIColor>? {
         set {
             let base = self.base
             setPicker(keyPath: newValue, render: {
@@ -24,8 +23,7 @@ public extension ThemeKit where Base: CALayer {
         }
     }
     
-    public var borderColor: KeyPath<Theme, UIColor>? {
-        
+    var borderColor: KeyPath<Theme, UIColor>? {
         set {
             let base = self.base
             setPicker(keyPath: newValue, render: {
@@ -41,8 +39,7 @@ public extension ThemeKit where Base: CALayer {
 
 public extension ThemeKit where Base: CAShapeLayer {
     
-    public var strokeColor: KeyPath<Theme, UIColor>? {
-        
+    var strokeColor: KeyPath<Theme, UIColor>? {
         set {
             let base = self.base
             setPicker(keyPath: newValue, render: {
@@ -55,8 +52,7 @@ public extension ThemeKit where Base: CAShapeLayer {
         }
     }
     
-    public var fillColor: KeyPath<Theme, UIColor>? {
-        
+    var fillColor: KeyPath<Theme, UIColor>? {    
         set {
             let base = self.base
             setPicker(keyPath: newValue, render: {

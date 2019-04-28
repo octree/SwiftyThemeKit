@@ -10,8 +10,7 @@ import UIKit
 
 public extension ThemeKit where Base: UINavigationBar {
     
-    public var barTintColor: KeyPath<Theme, UIColor>? {
-        
+    var barTintColor: KeyPath<Theme, UIColor>? {
         set {
             let base = self.base
             setPicker(keyPath: newValue, render: {
@@ -24,8 +23,7 @@ public extension ThemeKit where Base: UINavigationBar {
         }
     }
     
-    public var titleColor: KeyPath<Theme, UIColor>? {
-        
+    var titleColor: KeyPath<Theme, UIColor>? {    
         set {
             let base = self.base
             setPicker(keyPath: newValue, render: {

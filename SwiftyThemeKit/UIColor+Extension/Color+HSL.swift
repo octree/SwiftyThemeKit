@@ -17,7 +17,7 @@ public extension UIColor {
     
     
     /// hsl 模型值，区间 [0, 1]
-    public var hsl: (CGFloat, CGFloat, CGFloat) {
+    var hsl: (CGFloat, CGFloat, CGFloat) {
         let (h, s, v) = hsv
         let hh = h
         var ll = (2 - s) * v
@@ -34,7 +34,7 @@ public extension UIColor {
     ///   - saturation: saturation 区间 [0, 1]
     ///   - lightness: lightness 区间 [0, 1]
     ///   - alpha: alpha 区间 [0, 1]
-    public convenience init(hue: CGFloat, saturation: CGFloat, lightness: CGFloat, alpha: CGFloat = 1) {
+    convenience init(hue: CGFloat, saturation: CGFloat, lightness: CGFloat, alpha: CGFloat = 1) {
         
         let h = hue
         let ll = lightness * 2
@@ -50,7 +50,7 @@ public extension UIColor {
     ///
     /// - Parameter amount: amount
     /// - Returns: 转换后的颜色
-    public func darken(byAmount amount: CGFloat) -> UIColor {
+    func darken(byAmount amount: CGFloat) -> UIColor {
         let (h, s, l) = hsl
         return UIColor(hue: h,
                        saturation: s,
@@ -64,7 +64,7 @@ public extension UIColor {
     ///
     /// - Parameter ratio: ratio
     /// - Returns: 转换后的颜色
-    public func darken(byRatio ratio: CGFloat) -> UIColor {
+    func darken(byRatio ratio: CGFloat) -> UIColor {
         let (h, s, l) = hsl
         return UIColor(hue: h,
                        saturation: s,
@@ -78,7 +78,7 @@ public extension UIColor {
     ///
     /// - Parameter amount: amount
     /// - Returns: 转换后的颜色
-    public func lighten(byAmount amount: CGFloat) -> UIColor {
+    func lighten(byAmount amount: CGFloat) -> UIColor {
         return darken(byAmount: -amount)
     }
     
@@ -88,7 +88,7 @@ public extension UIColor {
     ///
     /// - Parameter ratio: ratio
     /// - Returns: 转换后的颜色
-    public func lighten(byRatio ratio: CGFloat) -> UIColor {
+    func lighten(byRatio ratio: CGFloat) -> UIColor {
         return darken(byRatio:-ratio)
     }
 }

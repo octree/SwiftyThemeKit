@@ -10,8 +10,7 @@ import UIKit
 
 public extension ThemeKit where Base: UILabel {
     
-    public var textColor: KeyPath<Theme, UIColor>? {
-        
+    var textColor: KeyPath<Theme, UIColor>? {
         set {
             let base = self.base
             setPicker(keyPath: newValue, render: {
@@ -24,8 +23,7 @@ public extension ThemeKit where Base: UILabel {
         }
     }
     
-    public var highlightedTextColor: KeyPath<Theme, UIColor>? {
-        
+    var highlightedTextColor: KeyPath<Theme, UIColor>? {
         set {
             let base = self.base
             setPicker(keyPath: newValue, render: {
@@ -38,8 +36,7 @@ public extension ThemeKit where Base: UILabel {
         }
     }
     
-    public var shadowColor: KeyPath<Theme, UIColor>? {
-        
+    var shadowColor: KeyPath<Theme, UIColor>? {
         set {
             let base = self.base
             setPicker(keyPath: newValue, render: {

@@ -13,15 +13,14 @@ public extension UIColor {
     
     
     /// 以当前颜色为背景时，背景上的字体的颜色，自动判断使用黑色还是白色
-    public var textColor: UIColor {
-        
+    var textColor: UIColor {
         let (r, g, b) = rgbComponents
         let gray = 0.299 * r + 0.587 * g + 0.114 * b
         return gray > 0.73 ? .black : .white
     }
     
     /// 当前颜色作为主题色时，判断警告颜色 （eg：删除按钮...）
-    public var destructiveColor: UIColor {
+    var destructiveColor: UIColor {
         let (h, s, l) = hsl
         
         return h < 30 || h > 330 ? UIColor(hue: 0, saturation: s, lightness: l) : self
@@ -119,8 +118,7 @@ public extension UIColor {
     
     
     /// 以当前颜色为主题颜色，生成日间主题配色方案
-    public var lightTheme: Theme {
-        
+    var lightTheme: Theme {
         let base = Theme.Base(positive: self,
                               darkPositive: darken(byRatio: 0.25),
                               destructive: self.destructiveColor)
@@ -145,7 +143,7 @@ public extension UIColor {
     }
     
     /// 以当前颜色为主题颜色，生成夜间主题配色方案
-    public var nightTheme: Theme {
+    var nightTheme: Theme {
         let r = UIColor(hex6: 0x1B2836) // old: 1C2835
         let base = Theme.Base(positive: self,
                               darkPositive: darken(byRatio: 0.25),
@@ -171,8 +169,7 @@ public extension UIColor {
     }
     
     /// 以当前颜色为主题颜色，生成暗黑主题配色方案，个人感觉很难看
-    public var darkTheme: Theme {
-        
+    var darkTheme: Theme {
         let base = Theme.Base(positive: self,
                               darkPositive: darken(byRatio: 0.25),
                               destructive: self.destructiveColor)

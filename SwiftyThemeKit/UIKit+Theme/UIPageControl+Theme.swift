@@ -10,8 +10,7 @@ import UIKit
 
 public extension ThemeKit where Base: UIPageControl {
     
-    public var pageIndicatorTintColor: KeyPath<Theme, UIColor>? {
-        
+    var pageIndicatorTintColor: KeyPath<Theme, UIColor>? {
         set {
             let base = self.base
             setPicker(keyPath: newValue, render: {
@@ -24,8 +23,7 @@ public extension ThemeKit where Base: UIPageControl {
         }
     }
     
-    public var currentPageIndicatorTintColor: KeyPath<Theme, UIColor>? {
-        
+    var currentPageIndicatorTintColor: KeyPath<Theme, UIColor>? {
         set {
             let base = self.base
             setPicker(keyPath: newValue, render: {

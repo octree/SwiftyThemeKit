@@ -10,8 +10,7 @@ import UIKit
 
 public extension UIColor {
     
-    public var suggestColors: [UIColor] {
-        
+    var suggestColors: [UIColor] {
         return [
             S50,
             S100,

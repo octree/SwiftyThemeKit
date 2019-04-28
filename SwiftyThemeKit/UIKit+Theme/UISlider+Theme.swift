@@ -10,8 +10,7 @@ import UIKit
 
 public extension ThemeKit where Base: UISlider {
     
-    public var thumbTintColor: KeyPath<Theme, UIColor>? {
-        
+    var thumbTintColor: KeyPath<Theme, UIColor>? {
         set {
             let base = self.base
             setPicker(keyPath: newValue, render: {
@@ -24,8 +23,7 @@ public extension ThemeKit where Base: UISlider {
         }
     }
     
-    public var minimumTrackTintColor: KeyPath<Theme, UIColor>? {
-        
+    var minimumTrackTintColor: KeyPath<Theme, UIColor>? {
         set {
             let base = self.base
             setPicker(keyPath: newValue, render: {
@@ -38,8 +36,7 @@ public extension ThemeKit where Base: UISlider {
         }
     }
     
-    public var maximumTrackTintColor: KeyPath<Theme, UIColor>? {
-        
+    var maximumTrackTintColor: KeyPath<Theme, UIColor>? {
         set {
             let base = self.base
             setPicker(keyPath: newValue, render: {

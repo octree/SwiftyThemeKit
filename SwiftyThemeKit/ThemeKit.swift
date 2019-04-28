@@ -40,7 +40,7 @@ public extension ThemeKit {
     ///   - keyPath: Theme Keypath
     ///   - render: 渲染函数
     ///   - key: 默认为 #function，一般是属性的名称
-    public func setPicker<T>(keyPath: KeyPath<Theme, T>?, render: @escaping (T) -> Void, key: String = #function) {
+    func setPicker<T>(keyPath: KeyPath<Theme, T>?, render: @escaping (T) -> Void, key: String = #function) {
         
         if let kp = keyPath {
             pickers[key] = ThemePicker(keyPath: kp, render: render)
@@ -54,7 +54,7 @@ public extension ThemeKit {
     ///
     /// - Parameter key: 默认为 #function，一般是属性的名称
     /// - Returns: ThemePicker or nil
-    public func getPicker<T>(key: String = #function) -> ThemePicker<T>? {
+    func getPicker<T>(key: String = #function) -> ThemePicker<T>? {
         return pickers[key] as? ThemePicker<T>
     }
     
@@ -66,7 +66,7 @@ public extension ThemeKit {
     ///   - state:  UIControl.State
     ///   - render: 渲染函数
     ///   - key: 对应不同属性，这里默认使用 #function
-    public func setStatePicker<T>(keyPath: KeyPath<Theme, T>?, forState state: UIControl.State, render: @escaping (T) -> Void, key: String = #function) {
+    func setStatePicker<T>(keyPath: KeyPath<Theme, T>?, forState state: UIControl.State, render: @escaping (T) -> Void, key: String = #function) {
         var pickers = statePickers[key] ?? [UInt: Any]()
         if let kp = keyPath {
             pickers[state.rawValue] = ThemePicker(keyPath: kp, render: render)
@@ -91,7 +91,7 @@ public protocol ThemeKitCompatible: class {
 // 实现这个协议之后，对应的类和实例就有了 tk 属性
 public extension ThemeKitCompatible {
     
-    public static var tk: ThemeKit<Self>.Type {
+    static var tk: ThemeKit<Self>.Type {
         get {
             return ThemeKit<Self>.self
         }
@@ -99,7 +99,7 @@ public extension ThemeKitCompatible {
         }
     }
 
-    public var tk: ThemeKit<Self> {
+    var tk: ThemeKit<Self> {
         get {
             
             if let tk = objc_getAssociatedObject(self, &kThemeKitAssociateKey) as? ThemeKit<Self> {

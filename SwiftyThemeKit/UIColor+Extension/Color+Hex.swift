@@ -12,7 +12,7 @@ import UIKit
 
 public extension UIColor {
     
-    public convenience init(hex6: UInt32, alpha: CGFloat = 1) {
+    convenience init(hex6: UInt32, alpha: CGFloat = 1) {
         let divisor = CGFloat(255)
         let red     = CGFloat((hex6 & 0xFF0000) >> 16) / divisor
         let green   = CGFloat((hex6 & 0x00FF00) >>  8) / divisor
@@ -20,8 +20,7 @@ public extension UIColor {
         self.init(red: red, green: green, blue: blue, alpha: alpha)
     }
  
-    public convenience init?(hexString: String, alpha: CGFloat = 1.0) {
-        
+    convenience init?(hexString: String, alpha: CGFloat = 1.0) {
         var hex = hexString
         if hex.hasPrefix("#") {
             hex = String(hex[hex.index(after: hex.startIndex)...])

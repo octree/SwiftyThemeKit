@@ -15,8 +15,7 @@ public extension UIColor {
     
     
     /// 获取 HSLA 的值，区间 [0, 1]
-    public var hsva:(CGFloat, CGFloat, CGFloat, CGFloat) {
-        
+    var hsva:(CGFloat, CGFloat, CGFloat, CGFloat) {
         var hue: CGFloat = 0
         var saturation: CGFloat = 0
         var brightness: CGFloat = 0
@@ -27,8 +26,7 @@ public extension UIColor {
     }
     
     /// 获取 HSL 的值，区间 [0, 1]
-    public var hsv:(CGFloat, CGFloat, CGFloat) {
-        
+    var hsv:(CGFloat, CGFloat, CGFloat) {
         let (h, s, v, _) = hsva
         return (h, s, v)
     }
@@ -44,7 +42,7 @@ public extension UIColor {
     ///
     /// - Parameter offset: offset 区间 [0, 1]
     /// - Returns: 转换后的颜色
-    public func shiftHue(by offset: CGFloat) -> UIColor {
+    func shiftHue(by offset: CGFloat) -> UIColor {
         let (h, s, v, a) = hsva
         let newHue = (h + offset).truncatingRemainder(dividingBy: 1)
         return UIColor(hue: newHue >= 0 ? newHue : newHue + 1 ,
@@ -59,7 +57,7 @@ public extension UIColor {
     ///
     /// - Parameter amount: amount
     /// - Returns: 转换后的颜色
-    public func devalue(byAmount amount: CGFloat) -> UIColor {
+    func devalue(byAmount amount: CGFloat) -> UIColor {
         let (h, s, v, a) = hsva
         return UIColor(hue: h,
                        saturation: s,
@@ -73,7 +71,7 @@ public extension UIColor {
     ///
     /// - Parameter ratio: ratio
     /// - Returns: 转换后的颜色
-    public func devalue(byRatio ratio: CGFloat) -> UIColor {
+    func devalue(byRatio ratio: CGFloat) -> UIColor {
         let (h, s, v, a) = hsva
         return UIColor(hue: h,
                        saturation: s,
@@ -87,7 +85,7 @@ public extension UIColor {
     ///
     /// - Parameter amount: amount
     /// - Returns: 转换后的颜色
-    public func value(byAmount amount: CGFloat) -> UIColor {
+    func value(byAmount amount: CGFloat) -> UIColor {
         return devalue(byAmount: -amount)
     }
     
@@ -97,7 +95,7 @@ public extension UIColor {
     ///
     /// - Parameter ratio: ratio
     /// - Returns: 转换后的颜色
-    public func value(byRatio ratio: CGFloat) -> UIColor {
+    func value(byRatio ratio: CGFloat) -> UIColor {
         return devalue(byRatio:-ratio)
     }
     
@@ -107,7 +105,7 @@ public extension UIColor {
     ///
     /// - Parameter amount: amount
     /// - Returns: 转换后的颜色
-    public func desaturate(byAmount amount: CGFloat) -> UIColor {
+    func desaturate(byAmount amount: CGFloat) -> UIColor {
         let (h, s, v, a) = hsva
         return UIColor(hue: h,
                        saturation: max(0, min(s - amount, 1)),
@@ -121,7 +119,7 @@ public extension UIColor {
     ///
     /// - Parameter ratio: ratio
     /// - Returns: 转换后的颜色
-    public func desaturate(byRatio ratio: CGFloat) -> UIColor {
+    func desaturate(byRatio ratio: CGFloat) -> UIColor {
         let (h, s, v, a) = hsva
         return UIColor(hue: h,
                        saturation: min(1, max(s * (1 - ratio), 0)),
@@ -134,7 +132,7 @@ public extension UIColor {
     ///
     /// - Parameter amount: amount
     /// - Returns: 转换后的颜色
-    public func saturate(byAmount amount: CGFloat) -> UIColor {
+    func saturate(byAmount amount: CGFloat) -> UIColor {
         return desaturate(byAmount: -amount)
     }
     
@@ -143,7 +141,7 @@ public extension UIColor {
     ///
     /// - Parameter ratio: ratio
     /// - Returns: 转换后的颜色
-    public func saturate(byRatio ratio: CGFloat) -> UIColor {
+    func saturate(byRatio ratio: CGFloat) -> UIColor {
         return desaturate(byRatio:-ratio)
     }
 }

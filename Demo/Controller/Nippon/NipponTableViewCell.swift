@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import ThemeKit
+import SwiftyThemeKit
 
 class NipponTableViewCell: UITableViewCell {
 

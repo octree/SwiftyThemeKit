@@ -10,7 +10,7 @@ import UIKit
 
 public extension ThemeKit where Base: UIButton {
 
-    public func setTitleColor(_ keyPath: KeyPath<Theme, UIColor>?, forState state: UIControl.State) {
+    func setTitleColor(_ keyPath: KeyPath<Theme, UIColor>?, forState state: UIControl.State) {
         let base = self.base
         setStatePicker(keyPath: keyPath, forState: state, render: {
             color in

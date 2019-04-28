@@ -11,7 +11,7 @@ import UIKit
 
 public extension UIColor {
     
-    public var rgbComponents: (CGFloat, CGFloat, CGFloat) {
+    var rgbComponents: (CGFloat, CGFloat, CGFloat) {
         var r: CGFloat = 0
         var g: CGFloat = 0
         var b: CGFloat = 0

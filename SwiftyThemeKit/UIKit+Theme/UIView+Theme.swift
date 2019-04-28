@@ -15,8 +15,7 @@ extension UIView: ThemeKitCompatible {
 
 public extension ThemeKit where Base: UIView {
     
-    public var backgroundColor: KeyPath<Theme, UIColor>? {
-        
+    var backgroundColor: KeyPath<Theme, UIColor>? {
         set {
             
             let base = self.base
@@ -30,8 +29,7 @@ public extension ThemeKit where Base: UIView {
         }
     }
     
-    public var tintColor: KeyPath<Theme, UIColor>? {
-        
+    var tintColor: KeyPath<Theme, UIColor>? {    
         set {
             let base = self.base
             setPicker(keyPath: newValue, render: {
