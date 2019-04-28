@@ -50,7 +50,7 @@ ThemeManager.shared.changeTheme(with: anotherColor, style: .night)
 ### carthage
 
 ```
-github "octree/SwiftyThemeKit"  ~> 0.1.6
+github "octree/SwiftyThemeKit"  ~> 1.0.0
 ```
 
 
@@ -58,7 +58,7 @@ github "octree/SwiftyThemeKit"  ~> 0.1.6
 ### CocoaPods
 
 ```
-pod 'SwiftyThemeKit', '~> 0.1.6'
+pod 'SwiftyThemeKit', '~> 1.0.0'
 ```
 
 
