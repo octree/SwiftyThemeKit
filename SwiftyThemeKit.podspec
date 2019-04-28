@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name = 'SwiftyThemeKit'
-  s.version = '0.1.5'
+  s.version = '1.0.0'
   s.license = 'MIT'
   s.summary = 'Elegant Theme Kit in Swift'
   s.homepage = 'https://github.com/octree/SwiftyThemeKit'
@@ -10,5 +10,5 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = '9.0'
 
-  s.source_files = 'ThemeKit/**/*.swift'
+  s.source_files = 'SwiftyThemeKit/**/*.swift'
 end
